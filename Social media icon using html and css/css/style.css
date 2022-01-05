@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+.wrapper {
+  display: inline-flex;
+}
+.wrapper .icon {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.68, -0.55.0.265, 1.55);
+}
+.wrapper .icon span {
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.wrapper .icon span i {
+  font-size: 25px;
+  line-height: 60px;
+}
+.wrapper .icon:hover span {
+    color: #fff;
+    }
+.wrapper .icon .tooltips {
+  position: absolute;
+  top: 0px;
+  background: #fff;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55.0.265, 1.55);
+  -webkit-transition: all 0.4s cubic-bezier(0.68, -0.55.0.265, 1.55);
+  -moz-transition: all 0.4s cubic-bezier(0.68, -0.55.0.265, 1.55);
+  -ms-transition: all 0.4s cubic-bezier(0.68, -0.55.0.265, 1.55);
+  -o-transition: all 0.4s cubic-bezier(0.68, -0.55.0.265, 1.55);
+}
+.wrapper .icon:hover .tooltips {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .icon .tooltips::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  -webkit-transform: translate(-50%) rotate(45deg);
+  -moz-transform: translate(-50%) rotate(45deg);
+  -ms-transform: translate(-50%) rotate(45deg);
+  -o-transform: translate(-50%) rotate(45deg);
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltips
+{
+text-shadow: 0px -1px 0px  rgba(0, 0, 0, 0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltips,
+.wrapper .facebook:hover .tooltips:before
+{
+background: #385999;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltips,
+.wrapper .twitter:hover .tooltips:before
+{
+background: #46C1f6;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltips,
+.wrapper .instagram:hover .tooltips:before
+{
+background: #e13063;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltips,
+.wrapper .github:hover .tooltips:before
+{
+background: #333;
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltips,
+.wrapper .youtube:hover .tooltips:before
+{
+background: #de4638;
+}
